@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sourav Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <a href="./index.html" class="logo">Satvic</a>
+            <nav class="navbar">
+                <a href="index.html" style="--i:1;">About</a>
+                <a href="project.html" style="--i:2;" class="active">Projects</a>
+                <a href="skills.html" style="--i:3;">Skills</a>
+                <a href="socials.html" style="--i:4;">Socials</a>
+            </nav>
+        </header> 
+        <div class="project-title">
+            <h1>Recent Work</h1>
+            <p>Explore some of my recent projects</p>
+        </div>
+        <section class="project-section">
+            <div class="slider-container">
+                <div class="slide">
+                    <div class="card"><div class="box" style="background-color: #479c58; z-index:2;">
+                        <div class="imgs">
+                            <a href="https://github.com/SarveshShahane/Bhaasha" target="_blank"><img class ="images" src="./images/bhaasha.png" alt="Bhaasha"><i class="fa-solid fa-up-right-from-square layer"></i></i></a>
+                        </div>    
+                        <h2>Bhaasha</h2>
+                        <p>A simple language translator web app that allows users to translate text between different languages. It also includes Text-to-Speech (TTS) and Speech-to-Text (STT) functionalities using the Web Speech API.</p>
+                    </div></div>
+                </div>
+                <div class="slide">
+                    <div class="card"><div class="box" style="background-color: #B026FF">
+                        <div class="imgs">
+                            <a href="https://github.com/SarveshShahane/CashMate" target="_blank"><img class ="images" src="./images/cashmate.png" alt="Cashmate"><i class="fa-solid fa-up-right-from-square layer"></i></i></a>
+                        </div>
+                        <h2>CashMate</h2>
+                        <p>CashMate is a personal finance management app designed to help you track your expenses, manage group spending, and settle debts seamlessly.</p>
+                    </div></div>
+                </div>
+                <div class="slide">
+                    <div class="card"><div class="box"><h2>Coming Soon!</h2></div></div>
+                </div>
+                <div class="slide">
+                    <div class="card"><div class="box"><h2>Coming Soon!</h2></div></div>
+                </div>
+            </div>
+            </section>
+        <script>
+            const boxes = document.querySelectorAll('.slide')
+
+            window.addEventListener('scroll', checkBoxes)
+
+            checkBoxes()
+
+            function checkBoxes() {
+                const triggerBottom = window.innerHeight / 5 * 4
+
+                boxes.forEach(box => {
+                    const boxTop = box.getBoundingClientRect().top
+
+                    if(boxTop < triggerBottom) {
+                        box.classList.add('show')
+                    } else {
+                        box.classList.remove('show')
+                    }
+                });
+            };
+        </script>
+    </body>
+</html>
