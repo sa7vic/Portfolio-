@@ -19,9 +19,14 @@ const HeroSection = ({ heroTyping, currentRole }) => {
               Passionate about creating innovative solutions and building amazing web experiences. 
               Let's turn ideas into reality!
             </p>
-            <button className="btn download-cv">
-              <i className="fas fa-download me-2"></i>Download Resume
-            </button>
+            <button className="btn download-cv" onClick={() => {
+              const link = document.createElement('a');
+              link.href = '/SouravResume.pdf';
+              link.download = 'SouravResume.pdf'; 
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }}
           </div>
         </div>
       </div>
