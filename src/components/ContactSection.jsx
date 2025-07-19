@@ -24,10 +24,10 @@ const ContactSection = () => {
   };
 
   const socialLinks = [
-    { icon: 'fab fa-linkedin', name: 'LinkedIn', link: 'https://www.linkedin.com/in/xx' },
-    { icon: 'fab fa-github', name: 'GitHub', link: 'https://github.com/xx' },
-    { icon: 'fab fa-instagram', name: 'Instagram', link: 'https://www.instagram.com/xx/' },
-    { icon: 'fas fa-code', name: 'CodeChef', link: 'https://www.codechef.com/users/xx' }
+    { icon: 'fab fa-linkedin', name: 'LinkedIn', link: 'https://www.linkedin.com/in/sourav-satvic?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
+    { icon: 'fab fa-github', name: 'GitHub', link: 'https://github.com/sa7vic' },
+    { icon: 'fab fa-instagram', name: 'Instagram', link: 'https://www.instagram.com/souravkumar.20' },
+    { icon: 'fas fa-code', name: 'CodeChef', link: 'https://www.codechef.com/users/satvic' }
   ];
 
   return (
