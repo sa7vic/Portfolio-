@@ -6,7 +6,7 @@ const ProjectsSection = () => {
       id: 1,
       name: "CashMate",
       description: "Manage personal and group finances in one place, from tracking expenses to settling debts.",
-      image: "/assests/cashmate.png",
+      image: "/assets/cashmate.png",
       githubUrl: "https://github.com/SarveshShahane/CashMate",
       color: "rgba(147, 51, 234, 0.4)" 
     },
@@ -14,7 +14,7 @@ const ProjectsSection = () => {
       id: 2,
       name: "Stock Movement Prediction",
       description: "Jupyter notebook to predict next-day tech stock movements using machine learning.", 
-      image: "/assests/stock.png",
+      image: "/assets/stock.png",
       githubUrl: "https://github.com/sa7vic/Stock-movement-Prediction",
       color: "rgba(37, 99, 235, 0.4)" 
     },
@@ -22,7 +22,7 @@ const ProjectsSection = () => {
       id: 3,
       name: "Bhaasha", 
       description: "Speak, translate, and listen — automatically, using the Web Speech API.",
-      image: "/assests/bhaasha.png",
+      image: "/assets/bhaasha.png",
       githubUrl: "https://github.com/username/task-manager",
       color: "rgba(16, 185, 129, 0.4)" 
     }
