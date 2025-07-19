@@ -26,7 +26,9 @@ const HeroSection = ({ heroTyping, currentRole }) => {
               document.body.appendChild(link);
               link.click();
               document.body.removeChild(link);
-            }}
+            }}>
+              <i className="fas fa-download me-2"></i>Download Resume
+          </button>
           </div>
         </div>
       </div>
