@@ -10,7 +10,7 @@ const HeroSection = ({ heroTyping, currentRole }) => {
           </div>
           <div className="col-lg-6 col-md-12 order-2 order-lg-2">
             <h1 className="display-4 fw-bold mb-3">
-              Hello! I am <span className="text-primary">Satvic</span>
+              Hello! I am <span className="text-primary">Sourav Kumar</span>
             </h1>
             <h2 className="mb-4" style={{fontSize: '2rem', fontWeight: 'bold'}}>
               I am a {currentRole}<span className="hero-cursor text-primary">|</span>
