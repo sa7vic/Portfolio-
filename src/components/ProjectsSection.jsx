@@ -23,7 +23,7 @@ const ProjectsSection = () => {
       name: "Bhaasha", 
       description: "Speak, translate, and listen — automatically, using the Web Speech API.",
       image: "/assets/bhaasha.png",
-      githubUrl: "https://github.com/username/task-manager",
+      githubUrl: "https://github.com/SarveshShahane/Bhaasha",
       color: "rgba(16, 185, 129, 0.4)" 
     }
   ];
