@@ -6,7 +6,7 @@ const HeroSection = ({ heroTyping, currentRole }) => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-12 text-center mb-4 mb-lg-0 order-1 order-lg-1">
-            <img src="\assests\profile-pic.jpeg" alt="Satvic" className="hero-image" />
+            <img src="/assets/profile-pic.jpeg" alt="Satvic" className="hero-image" />
           </div>
           <div className="col-lg-6 col-md-12 order-2 order-lg-2">
             <h1 className="display-4 fw-bold mb-3">
