@@ -7,6 +7,7 @@ import ProjectsSection from './components/ProjectsSection';
 import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import StarfieldBackground from './components/StarfieldBackground';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -84,6 +85,7 @@ function App() {
 
   return (
     <div className={darkMode ? 'dark-mode' : 'light-mode'}>
+      <StarfieldBackground />
       <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
       <HeroSection currentRole={currentRole} />
       <AboutSection />
