@@ -13,14 +13,20 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   transition: all 0.3s ease;
+  background-color: #0f0f0f;
 }
 .dark-mode {
-  background-color: var(--dark-bg);
+  background-color: transparent;
   color: var(--text-dark);
+  position: relative;
 }
 .light-mode {
   background-color: var(--light-bg);
   color: var(--text-light);
+}
+section {
+  position: relative;
+  z-index: 1;
 }
 ::-webkit-scrollbar {
   width: 12px;
@@ -98,9 +104,15 @@ body {
   opacity: 0.2;
 }
 @keyframes zoom {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-  100% { transform: scale(1); }
+  0% { 
+    transform: scale(1); 
+  }
+  50% { 
+    transform: scale(1.2); 
+  }
+  100% { 
+    transform: scale(1); 
+  }
 }
 .loading-text-wrapper {
   position: relative;
@@ -134,8 +146,12 @@ body {
   text-shadow: 0 0 10px rgba(59, 130, 246, 0.8);
 }
 @keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+  0%, 50% { 
+    opacity: 1; 
+  }
+  51%, 100% { 
+    opacity: 0; 
+  }
 }
 .loading-bar-container {
   width: 400px;
@@ -260,14 +276,19 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-10px); 
+  }
 }
 .hero-typing {
   font-size: 2.5rem;
   font-weight: bold;
 }
-.light-mode .download-cv, .dark-mode .download-cv {
+.light-mode .download-cv, 
+.dark-mode .download-cv {
   background-color: var(--primary-blue);
   border: none;
   padding: 12px 30px;
@@ -282,7 +303,8 @@ body {
 .dark-mode .download-cv {
   color: white !important;
 }
-.light-mode .download-cv:hover, .dark-mode .download-cv:hover {
+.light-mode .download-cv:hover, 
+.dark-mode .download-cv:hover {
   background-color: var(--primary-blue);
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(59, 130, 246, 0.6);
@@ -307,9 +329,15 @@ body {
   display: inline-block;
   margin-right: 8px;
 }
-.dot-red { background: #ff5f57; }
-.dot-yellow { background: #ffbd2e; }
-.dot-green { background: #28ca42; }
+.dot-red { 
+  background: #ff5f57; 
+}
+.dot-yellow { 
+  background: #ffbd2e; 
+}
+.dot-green { 
+  background: #28ca42; 
+}
 .terminal-content {
   color: #00ff00;
   font-size: 14px;
