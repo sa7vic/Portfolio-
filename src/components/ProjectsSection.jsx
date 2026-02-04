@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectsSection = () => {
   const projects = [
-    {
+     {
       id: 1,
       name: "CashMate",
       description: "Manage personal and group finances in one place, from tracking expenses to settling debts.",
@@ -25,6 +25,22 @@ const ProjectsSection = () => {
       image: "/assets/bhaasha.png",
       githubUrl: "https://github.com/SarveshShahane/Bhaasha",
       color: "rgba(16, 185, 129, 0.4)" 
+    },
+    {
+      id: 4,
+      name: "FlowSense",
+      description: "Cognitive pattern visualization dashboard that acts as a mirror for your focus patterns over time.",
+      image: "/assets/flowsense.png",
+      githubUrl: "https://github.com/sa7vic/FlowSense",
+      color: "rgba(59, 130, 246, 0.4)" 
+    },
+    {
+      id: 5,
+      name: "SmartGov",
+      description: "Explainable audit risk intelligence system providing transparency in government spending analysis.",
+      image: "/assets/smartgov.png",
+      githubUrl: "https://github.com/sa7vic/SmartGov",
+      color: "rgba(234, 179, 8, 0.4)" 
     }
   ];
 
